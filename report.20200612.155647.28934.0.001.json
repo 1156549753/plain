@@ -1,0 +1,599 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200612.155647.28934.0.001.json",
+    "dumpEventTime": "2020-06-12T15:56:47Z",
+    "dumpEventTimeStamp": "1591948607412",
+    "processId": 28934,
+    "cwd": "/Users/fuguanwen/plain",
+    "commandLine": [
+      "/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node",
+      "/Users/fuguanwen/plain/node_modules/_react-app-rewired@2.1.6@react-app-rewired/scripts/start.js"
+    ],
+    "nodejsVersion": "v13.8.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.8.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.8.0/node-v13.8.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.8.0/node-v13.8.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.5.0",
+    "osVersion": "Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 55016810,
+        "nice": 0,
+        "sys": 42428860,
+        "idle": 289410330,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 15323220,
+        "nice": 0,
+        "sys": 16091960,
+        "idle": 355312500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 52593160,
+        "nice": 0,
+        "sys": 32896480,
+        "idle": 301239920,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 13737670,
+        "nice": 0,
+        "sys": 14038490,
+        "idle": 358951170,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "78:4f:43:89:1b:4e",
+        "address": "fe80::1cf9:a51e:b318:1f28",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "78:4f:43:89:1b:4e",
+        "address": "172.21.173.53",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "d6:bf:59:da:0f:bf",
+        "address": "fe80::d4bf:59ff:feda:fbf",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "d6:bf:59:da:0f:bf",
+        "address": "fe80::d4bf:59ff:feda:fbf",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::7398:1cf0:9494:e43e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::b4ce:4fd3:6ba3:e424",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "en6",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      }
+    ],
+    "host": "fuguanwendeMacBook-Pro.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000010015a0e2",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001000824c0",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182ba7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182b43",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010030afc5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010030c6a4",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010030943e",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100307426",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100312daa",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100312e31",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002e0176",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100621338",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100954639",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x0000306f0238786d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00000001008e07bb",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001008de3ba",
+      "symbol": "Builtins_JSEntryTrampoline [/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2181857280,
+    "totalCommittedMemory": 2174697504,
+    "usedMemory": 2080433896,
+    "availableMemory": 46829648,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 26743080,
+        "capacity": 16758784,
+        "used": 2785704,
+        "available": 13973080
+      },
+      "old_space": {
+        "memorySize": 2056921088,
+        "committedMemory": 2056881160,
+        "capacity": 1987920136,
+        "used": 1987780368,
+        "available": 139768
+      },
+      "code_space": {
+        "memorySize": 1478656,
+        "committedMemory": 1402944,
+        "capacity": 1306400,
+        "used": 1306400,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3936256,
+        "committedMemory": 3932288,
+        "capacity": 3016320,
+        "used": 3016320,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 85082112,
+        "committedMemory": 85082112,
+        "capacity": 84967520,
+        "used": 84967520,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544544,
+        "used": 544544,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 212.383,
+    "kernelCpuSeconds": 55.0614,
+    "cpuConsumptionPercent": 0.0901991,
+    "maxRss": 2717321789440,
+    "pageFaults": {
+      "IORequired": 2616,
+      "IONotRequired": 1648542
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "TERM_PROGRAM": "vscode",
+    "NODE": "/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node",
+    "npm_config_version_git_tag": "true",
+    "NVM_CD_FLAGS": "",
+    "INIT_CWD": "/Users/fuguanwen/plain",
+    "npm_package_dependencies_less": "^3.11.1",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "HOMEBREW_BOTTLE_DOMAIN": "https://mirrors.aliyun.com/homebrew/homebrew-bottles",
+    "TMPDIR": "/var/folders/kx/x3q8xwks6_v_54dw5c53pxp80000gn/T/",
+    "npm_config_init_license": "MIT",
+    "GOBIN": "/usr/local/go/bin",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "npm_config___registry_npm_taobao_org__email": "1156549753@qq.com",
+    "npm_config_home": "https://npm.taobao.org",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_package_private": "true",
+    "npm_package_dependencies_react_dom": "^16.13.1",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_description": "In the project directory, you can run:",
+    "USER": "fuguanwen",
+    "NVM_DIR": "/Users/fuguanwen/.nvm",
+    "npm_package_dependencies__testing_library_user_event": "^7.1.2",
+    "COMMAND_MODE": "unix2003",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_eslintConfig_extends": "react-app",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.7H2mmuUYBQ/Listeners",
+    "npm_package_dependencies_customize_cra": "^0.9.1",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x19:0x34",
+    "PUB_HOSTED_URL": "https://pub.flutter-io.cn",
+    "npm_package_dependencies__types_react_redux": "^7.1.7",
+    "npm_package_dependencies_typescript_loadable_components_plugin": "^1.0.0",
+    "npm_execpath": "/Users/fuguanwen/.nvm/versions/node/v13.8.0/lib/node_modules/yarn/bin/yarn.js",
+    "GO111MODULE": "on",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "PATH": "/var/folders/kx/x3q8xwks6_v_54dw5c53pxp80000gn/T/yarn--1591276520091-0.20083840546259624:/Users/fuguanwen/plain/node_modules/.bin:/Users/fuguanwen/.config/yarn/link/node_modules/.bin:/Users/fuguanwen/.nvm/versions/node/v13.8.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/fuguanwen/.nvm/versions/node/v13.8.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node_modules/npm/bin/node-gyp-bin:/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin:/usr/local/opt/ruby/bin:/usr/local/mongodb/bin:/usr/local/opt/libxml2/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin:/usr/local/opt/ruby/bin:/usr/local/mongodb/bin:/usr/local/opt/libxml2/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/flutter/bin:/Users/fuguanwen/go:https://pub.flutter-io.cn://storage.flutter-io.cn:/Users/fuguanwen/.composer/vendor/bin:/usr/local/go/bin:/Users/fuguanwen/go:https://pub.flutter-io.cn:https://storage.flutter-io.cn:/Users/fuguanwen/.composer/vendor/bin",
+    "npm_config___registry_npm_taobao_org__always_auth": "",
+    "GOPROXY": "https://goproxy.io",
+    "_": "/Users/fuguanwen/plain/node_modules/.bin/react-app-rewired",
+    "LaunchInstanceID": "D32D172C-EC89-43BE-8257-43D79AED7084",
+    "npm_package_dependencies__types_jest": "^24.0.0",
+    "npm_package_dependencies_typescript": "~3.7.2",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "PWD": "/Users/fuguanwen/plain",
+    "FLUTTER_STORAGE_BASE_URL": "https://storage.flutter-io.cn",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_lifecycle_event": "start",
+    "npm_package_name": "plain",
+    "LANG": "zh_CN.UTF-8",
+    "npm_config_version_commit_hooks": "true",
+    "npm_package_scripts_start": "react-app-rewired start",
+    "npm_package_scripts_build": "react-app-rewired build",
+    "npm_package_dependencies_react_router_dom": "^5.1.2",
+    "XPC_FLAGS": "0x0",
+    "npm_config_bin_links": "true",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "CGO_ENABLED": "0",
+    "npm_package_dependencies_less_loader": "^5.0.0",
+    "HOME": "/Users/fuguanwen",
+    "SHLVL": "3",
+    "npm_config___registry_npm_taobao_org__username": "fgwenz",
+    "npm_package_scripts_test": "react-app-rewired test",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_strict_ssl": "true",
+    "npm_config_save_prefix": "^",
+    "npm_config_version_git_message": "v%s",
+    "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
+    "npm_package_dependencies__types_node": "^12.0.0",
+    "npm_package_dependencies_react_scripts": "3.4.1",
+    "YARN_WRAP_OUTPUT": "false",
+    "LOGNAME": "fuguanwen",
+    "npm_package_dependencies__types_react_router_dom": "^5.1.5",
+    "npm_lifecycle_script": "react-app-rewired start",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/kx/x3q8xwks6_v_54dw5c53pxp80000gn/T/vscode-git-659a7b71de.sock",
+    "npm_package_dependencies_react": "^16.13.1",
+    "npm_package_dependencies__types_react": "^16.9.0",
+    "GOPATH": "/Users/fuguanwen/go",
+    "NVM_BIN": "/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v13.8.0 darwin x64",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version_git_sign": "",
+    "npm_package_dependencies__testing_library_react": "^9.3.2",
+    "npm_package_dependencies_babel_plugin_import": "^1.13.0",
+    "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "npm_config_ignore_optional": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_package_dependencies_antd": "^4.2.0",
+    "SECURITYSESSIONID": "186b2",
+    "npm_package_dependencies__types_react_dom": "^16.9.0",
+    "npm_package_dependencies__types_react_router_redux": "^5.0.18",
+    "npm_config_version_tag_prefix": "v",
+    "npm_package_dependencies_react_app_rewired": "^2.1.6",
+    "npm_node_execpath": "/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node",
+    "COLORTERM": "truecolor",
+    "NODE_ENV": "development",
+    "NODE_PATH": "",
+    "BABEL_ENV": "development",
+    "WEBPACK_DEV_SERVER": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 10240,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/fuguanwen/.nvm/versions/node/v13.8.0/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/System/Library/CoreServices/Encodings/libSimplifiedChineseConverter.dylib",
+    "/Users/fuguanwen/plain/node_modules/_fsevents@1.2.12@fsevents/build/Release/fse.node",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices",
+    "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList",
+    "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+    "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+    "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration",
+    "/System/Library/Frameworks/Security.framework/Versions/A/Security",
+    "/usr/lib/libsqlite3.dylib",
+    "/usr/lib/libxml2.2.dylib",
+    "/usr/lib/libnetwork.dylib",
+    "/usr/lib/libapple_nghttp2.dylib",
+    "/usr/lib/libauto.dylib",
+    "/usr/lib/libcompression.dylib",
+    "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration",
+    "/usr/lib/libarchive.2.dylib",
+    "/usr/lib/liblangid.dylib",
+    "/usr/lib/libCRFSuite.dylib",
+    "/usr/lib/liblzma.5.dylib",
+    "/usr/lib/libenergytrace.dylib",
+    "/usr/lib/libbsm.0.dylib",
+    "/usr/lib/system/libkxld.dylib",
+    "/System/Library/PrivateFrameworks/AppleFSCompression.framework/Versions/A/AppleFSCompression",
+    "/usr/lib/libcoretls.dylib",
+    "/usr/lib/libcoretls_cfhelpers.dylib",
+    "/usr/lib/libpam.2.dylib",
+    "/usr/lib/libxar.1.dylib",
+    "/usr/lib/libbz2.1.0.dylib",
+    "/usr/lib/libiconv.2.dylib",
+    "/usr/lib/libcharset.1.dylib",
+    "/usr/lib/libpcap.A.dylib",
+    "/System/Library/Frameworks/NetFS.framework/Versions/A/NetFS",
+    "/System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth",
+    "/System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport",
+    "/System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC",
+    "/System/Library/PrivateFrameworks/CoreNLP.framework/Versions/A/CoreNLP",
+    "/System/Library/PrivateFrameworks/MetadataUtilities.framework/Versions/A/MetadataUtilities",
+    "/usr/lib/libmecabra.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+    "/usr/lib/libmecab.dylib",
+    "/usr/lib/libgermantok.dylib",
+    "/usr/lib/libThaiTokenizer.dylib",
+    "/usr/lib/libChineseTokenizer.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libQuadrature.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBNNS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparse.dylib",
+    "/System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling",
+    "/System/Library/PrivateFrameworks/CoreEmoji.framework/Versions/A/CoreEmoji",
+    "/System/Library/PrivateFrameworks/LinguisticData.framework/Versions/A/LinguisticData",
+    "/System/Library/PrivateFrameworks/Lexicon.framework/Versions/A/Lexicon",
+    "/usr/lib/libcmph.dylib",
+    "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory",
+    "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory",
+    "/System/Library/PrivateFrameworks/APFS.framework/Versions/A/APFS",
+    "/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation",
+    "/usr/lib/libutil.dylib",
+    "/System/Library/PrivateFrameworks/CoreServicesStore.framework/Versions/A/CoreServicesStore",
+    "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement",
+    "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement",
+    "/usr/lib/libxslt.1.dylib"
+  ]
+}

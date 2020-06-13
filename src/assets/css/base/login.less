@@ -1,0 +1,106 @@
+#root,.login{
+    height: 100%;
+}
+
+.login{
+    background:radial-gradient(200% 100% at bottom center,#f7f7b6,#e96f92,#1b2947);
+    background:radial-gradient(220% 105% at top center,#1b2947 10%,#75517d 40%,#e96f92 65%,#f7f7b6);
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+//动画
+@keyframes rotate{
+    0%{
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+    }
+    100%{
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+    }
+}
+
+.stars{
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: absolute;
+    perspective-origin: 50% 100%;
+    left: 50%;
+    animation: rotate 90s infinite linear;
+    bottom: 0;
+}
+
+@media screen and (max-width:1080px){
+    .star{
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .star{
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+    }
+}
+
+
+.star{
+    background: #f7f7b8;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.ct{
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    .title{
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 26px;
+    }
+    input{
+        display: block;
+        height: 40px;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        // border-radius: 8px;
+        font-size: 20px;
+        color: #ffffff;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background: transparent;
+    }
+    input::placeholder{
+        color: rgba(225, 255, 255, 0.3);
+    }
+
+    .lg{
+        display: block;
+        height: 50px;
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+        border: none;
+        font-size: 22px;
+        border-radius: 30px;
+        color: #ffffff;
+        background: #bf7a86;
+    }
+}
