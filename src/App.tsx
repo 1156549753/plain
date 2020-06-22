@@ -1,9 +1,11 @@
 import React from 'react';
-import Router from './router/Rouer'
 import '@/assets/css/common/reset.css'
+// import Index from './views/Index/index'
+import Router from './router/Rouer'
 function App() {
   return (
-    <Router/>
+      // <Index />
+      <Router />
   );
 }
 

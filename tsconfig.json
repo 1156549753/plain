@@ -1,5 +1,8 @@
 {
+  "extends": "./path.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -21,6 +24,5 @@
   },
   "include": [
     "src"
-  ],
-  "extends": "./paths.json"
+  ]
 }
