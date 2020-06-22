@@ -36,7 +36,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test"
   },
-  "proxy": "http://jifan_test_management_system_api.jifan.net.cn",
+  "proxy": "xxxx",
   "eslintConfig": {
     "extends": "react-app"
   },
